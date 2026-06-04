@@ -55,6 +55,7 @@ export default function Accordion({
           text-slate-600
           dark:text-slate-300
           "
+          
         >
           {answer}
         </div>
