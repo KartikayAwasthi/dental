@@ -25,7 +25,7 @@ const caseEmoji: Record<string, string> = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 bg-slate-50 dark:bg-[#0d1117]">
+    <section id="services" className="py-32 bg-white dark:bg-[#09090b]">
       <div className="container mx-auto px-6">
 
         <m.div

@@ -26,7 +26,7 @@ const points = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why" className="py-32 bg-white dark:bg-[#09090b]">
+    <section id="why" className="py-32 bg-slate-50 dark:bg-[#0d1117]">
       <div className="container mx-auto px-6">
 
         <m.div

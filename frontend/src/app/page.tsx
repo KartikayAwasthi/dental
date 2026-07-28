@@ -290,12 +290,12 @@ export default function HomePage() {
       <main>
         <Hero />
         <AboutDoctor />
-        <Milestones />
+        <Gallery />
         <Services />
         <WhyChooseUs />
         <Availability />
         <Research />
-        <Gallery />
+        <Milestones />
         <Testimonials />
         <FAQs />
         <ReferralSection />
