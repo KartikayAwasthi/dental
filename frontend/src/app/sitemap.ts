@@ -30,11 +30,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    {
-      url: `${BASE}/#contact`,
-      lastModified: new Date("2026-06-26"),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
   ];
 }

@@ -99,7 +99,7 @@ export default function Services() {
             <p className="font-bold text-white text-lg">🤔 Not sure which treatment you need?</p>
             <p className="text-teal-100 text-sm mt-1">Contact Dr. Taruna to discuss your concern before booking.</p>
           </div>
-          <a href="#contact"
+          <a href="#referral"
             className="shrink-0 bg-white text-teal-700 font-bold text-sm px-6 py-3 rounded-xl hover:bg-teal-50 transition-colors">
             Ask a Question
           </a>

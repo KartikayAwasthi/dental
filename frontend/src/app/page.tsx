@@ -15,7 +15,6 @@ import Gallery         from "@/components/sections/Gallery";
 import Testimonials    from "@/components/sections/Testimonials";
 import FAQs            from "@/components/sections/FAQs";
 import ReferralSection from "@/components/sections/ReferralSection";
-import Contact         from "@/components/sections/Contact";
 
 const BASE = "https://drtaruna.com";
 
@@ -32,7 +31,7 @@ const jsonLd = {
       honorificSuffix: "MDS",
       jobTitle: "Orthodontist & Dental Surgeon",
       description:
-        "MDS in Orthodontics & Dentofacial Orthopaedics, practising comprehensive dental and orthodontic care in Mathura, Uttar Pradesh. Experienced in fixed braces, clear aligner therapy, root canal treatment, restorative dentistry, and preventive dental care.",
+        "MDS in Orthodontics & Dentofacial Orthopaedics, practising comprehensive dental and orthodontic care. Experienced in fixed braces, clear aligner therapy, root canal treatment, restorative dentistry, and preventive dental care.",
       url: BASE,
       image: {
         "@type": "ImageObject",
@@ -207,8 +206,8 @@ const jsonLd = {
         {
           "@type": "ListItem",
           position: 5,
-          name: "Contact",
-          item: `${BASE}/#contact`,
+          name: "Book an Appointment",
+          item: `${BASE}/#referral`,
         },
       ],
     },
@@ -300,7 +299,6 @@ export default function HomePage() {
         <Testimonials />
         <FAQs />
         <ReferralSection />
-        <Contact />
       </main>
 
       <Footer />

@@ -15,13 +15,13 @@ export default function FAQs() {
           {/* Left */}
           <div className="lg:sticky lg:top-28 self-start">
             <p className="section-label">FAQs</p>
-            <h2 className="section-heading mt-4">Referral questions, answered</h2>
+            <h2 className="section-heading mt-4">Your questions, answered</h2>
             <p className="mt-5 text-[15px] text-slate-500 dark:text-white/45 leading-[1.75]">
-              Common questions from dentists, physicians, and specialists who refer orthodontic cases to Dr. Taruna.
+              Common questions from patients about treatments and appointments with Dr. Taruna.
             </p>
             <a href="#referral"
               className="inline-flex items-center gap-2 mt-8 bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors">
-              Ready to Refer?
+              Book an Appointment
             </a>
           </div>
 
