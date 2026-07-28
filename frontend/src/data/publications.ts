@@ -7,6 +7,7 @@ export const publications = [
     journal:
       "Asian Journal of Dental Sciences",
     year: "",
+    link: "https://journalajds.com/index.php/AJDS/article/view/356",
   },
   {
     id: 2,
@@ -16,5 +17,6 @@ export const publications = [
     journal:
       "National Conference, Rajahmundry, Andhra Pradesh",
     year: "",
+    link: "",
   },
 ];

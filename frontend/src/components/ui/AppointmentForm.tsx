@@ -9,6 +9,8 @@ import {
   MessageSquare,
 } from "lucide-react";
 
+const todayISO = () => new Date().toLocaleDateString("en-CA");
+
 export default function AppointmentForm() {
   const [form, setForm] = useState({
     name: "",
@@ -126,6 +128,8 @@ ${form.message}
           type="number"
           placeholder="Age"
           required
+          min={1}
+          max={120}
           value={form.age}
           onChange={(e) =>
             setForm({
@@ -157,6 +161,8 @@ ${form.message}
           <input
             type="tel"
             required
+            pattern="[0-9+\-\s()]{7,15}"
+            title="Enter a valid phone number"
             placeholder="Phone Number"
             value={form.phone}
             onChange={(e) =>
@@ -242,6 +248,7 @@ ${form.message}
           <input
             type="date"
             required
+            min={todayISO()}
             value={form.date}
             onChange={(e) =>
               setForm({
@@ -330,8 +337,8 @@ ${form.message}
           type="submit"
           className="
           w-full
-          bg-blue-600
-          hover:bg-blue-700
+          bg-[#0d9488]
+          hover:bg-[#0f766e]
           text-white
           py-4
           rounded-xl

@@ -35,12 +35,15 @@ export default function Research() {
           viewport={viewportOpts}
           className="space-y-px">
           {publications.map((paper, i) => (
-            <m.div key={paper.id}
+            <m.a key={paper.id}
+              href={paper.link || undefined}
+              target={paper.link ? "_blank" : undefined}
+              rel={paper.link ? "noopener noreferrer" : undefined}
               variants={fadeUp}
-              className="group grid sm:grid-cols-[60px_1fr_auto] gap-x-6 items-center py-7
+              className={`group grid sm:grid-cols-[60px_1fr_auto] gap-x-6 items-center py-7
                 border-b border-slate-100 dark:border-white/5
                 hover:bg-slate-50 dark:hover:bg-white/[0.02]
-                -mx-4 px-4 rounded-xl transition-colors">
+                -mx-4 px-4 rounded-xl transition-colors ${paper.link ? "cursor-pointer" : "cursor-default"}`}>
 
               <span className="text-[36px] font-black text-slate-100 dark:text-white/6 leading-none select-none
                 group-hover:text-teal-100 dark:group-hover:text-teal-500/10 transition-colors">
@@ -64,7 +67,7 @@ export default function Research() {
                   <ExternalLink size={14} className="text-slate-300 dark:text-white/20 group-hover:text-teal-500 transition-colors shrink-0" />
                 </m.div>
               </div>
-            </m.div>
+            </m.a>
           ))}
         </m.div>
 

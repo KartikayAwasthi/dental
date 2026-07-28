@@ -33,11 +33,11 @@ export default function AboutDoctor() {
             className="relative">
             <div className="rounded-3xl overflow-hidden bg-slate-100 dark:bg-white/5 ring-1 ring-slate-200 dark:ring-white/5 shadow-xl dark:shadow-none">
               <Image
-                src="/images/doctor/doctor.jpeg"
+                src="/images/doctor/doctor-about.jpeg"
                 alt="Dr. Taruna Pratap Singh"
                 width={580}
                 height={700}
-                className="w-full object-cover object-top"
+                className="w-full h-full scale-110 object-cover object-[center_18%]"
               />
             </div>
 
