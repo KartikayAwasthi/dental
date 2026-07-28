@@ -20,12 +20,12 @@ export default function Contact() {
             whileInView="visible"
             viewport={viewportOpts}>
 
-            <m.p variants={fadeUp} className="section-label">📞 Professional Enquiries</m.p>
+            <m.p variants={fadeUp} className="section-label">📞 Patient Enquiries</m.p>
             <m.h2 variants={fadeUp} className="section-heading mt-4">Get in touch</m.h2>
             <m.p variants={fadeUp}
               className="mt-5 text-[15px] text-slate-500 dark:text-white/45 leading-[1.75] max-w-sm">
-              For case discussions, informal referral conversations, or general professional
-              enquiries — use any of the channels below.
+              For appointment queries, treatment questions, or general enquiries —
+              use any of the channels below.
             </m.p>
 
             <m.div variants={stagger(0.08)} className="mt-10 space-y-5">
@@ -94,9 +94,9 @@ export default function Contact() {
               border border-slate-100 dark:border-white/5 rounded-3xl p-8">
             <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-1">✉️ Quick Message</h3>
             <p className="text-[13px] text-slate-400 dark:text-white/35 mb-7">
-              For informal case discussions. Use the{" "}
-              <a href="#referral" className="text-teal-600 underline">Referral Form</a>{" "}
-              for formal patient referrals.
+              For general questions. Use the{" "}
+              <a href="#referral" className="text-teal-600 underline">Appointment Form</a>{" "}
+              above to book a specific visit.
             </p>
             <QuickContactForm />
           </m.div>

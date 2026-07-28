@@ -1,58 +1,44 @@
 export const referralCases = [
   {
     id: 1,
-    title: "Severe Crowding & Spacing",
+    title: "Metal & Ceramic Braces",
     description:
-      "Complex tooth alignment cases with significant crowding, spacing, or arch-length discrepancies requiring specialist fixed or removable orthodontic management.",
-    tag: "Fixed / Aligner",
+      "Fixed orthodontic treatment using metal or tooth-coloured ceramic brackets to correct crowding, spacing, and bite alignment.",
+    tag: "Fixed Braces",
   },
   {
     id: 2,
-    title: "Skeletal Jaw Discrepancies",
+    title: "Clear Aligner Therapy",
     description:
-      "Anteroposterior, vertical, or transverse skeletal discrepancies requiring orthopaedic correction with functional appliances or surgical-orthodontic planning.",
-    tag: "Orthopaedic",
-  },
-  {
-    id: 3,
-    title: "Lingual Orthodontics",
-    description:
-      "Patients requesting completely concealed orthodontic treatment — brackets placed on the lingual (tongue-facing) surfaces of the teeth for maximum aesthetics.",
-    tag: "Aesthetic",
-  },
-  {
-    id: 4,
-    title: "Complex Clear Aligner Cases",
-    description:
-      "Cases beyond straightforward spacing or mild crowding — significant rotations, torque control requirements, or patients with restorative/periodontic needs.",
+      "Removable clear aligner treatment for discreet, comfortable straightening of teeth, planned using modern aligner protocols.",
     tag: "Clear Aligners",
   },
   {
-    id: 5,
-    title: "Surgical Orthodontic Planning",
+    id: 3,
+    title: "Root Canal Treatment",
     description:
-      "Pre- and post-surgical orthodontic management for orthognathic surgery cases. Collaborative treatment planning with oral and maxillofacial surgeons.",
-    tag: "Interdisciplinary",
+      "Diagnosis and management of infected or damaged tooth pulp to relieve pain and save the natural tooth.",
+    tag: "Endodontics",
+  },
+  {
+    id: 4,
+    title: "Restorative Dentistry & Crowns",
+    description:
+      "Fillings, restorations, and crown preparation to repair damaged or decayed teeth and restore function.",
+    tag: "Restorative",
+  },
+  {
+    id: 5,
+    title: "Scaling, Polishing & Preventive Care",
+    description:
+      "Professional cleaning, polishing, and preventive dental care along with patient education on oral hygiene.",
+    tag: "Preventive",
   },
   {
     id: 6,
-    title: "Early Intervention in Children",
+    title: "Extractions & Pediatric Dental Care",
     description:
-      "Growth modification in children aged 6–12 using removable and fixed functional appliances to intercept developing jaw and bite problems.",
-    tag: "Paediatric",
-  },
-  {
-    id: 7,
-    title: "Functional Appliance Therapy",
-    description:
-      "Myofunctional and orthopaedic appliance therapy for growing patients with Class II or Class III skeletal tendencies, deep bites, or crossbites.",
-    tag: "Functional",
-  },
-  {
-    id: 8,
-    title: "Adult Comprehensive Orthodontics",
-    description:
-      "Complex adult cases often requiring multidisciplinary coordination with periodontists, prosthodontists, or implant surgeons alongside orthodontic treatment.",
-    tag: "Adult",
+      "Tooth extractions and dental procedures for children, delivered with a gentle, patient-friendly approach.",
+    tag: "Pediatric",
   },
 ];

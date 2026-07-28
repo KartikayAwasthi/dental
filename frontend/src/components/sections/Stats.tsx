@@ -1,10 +1,10 @@
 import AnimatedCounter from "../ui/AnimatedCounter";
 
 const stats = [
-  { end: 5000, suffix: "+", label: "Orthodontic Cases", sub: "Managed over 15 years" },
-  { end: 15, suffix: "+", label: "Years of Practice", sub: "Specialist clinical experience" },
-  { end: 4, suffix: "+", label: "Research Publications", sub: "Indexed journals" },
-  { end: 98, suffix: "%", label: "Outcome Satisfaction", sub: "Reported by referring doctors" },
+  { end: 3, suffix: "+", label: "Years in Practice", sub: "Since November 2022" },
+  { end: 2, suffix: "", label: "Clinics", sub: "Goverdhan & Mathura" },
+  { end: 6, suffix: "+", label: "Core Treatment Skills", sub: "Orthodontic & general dentistry" },
+  { end: 1, suffix: "", label: "Published Research Article", sub: "Asian Journal of Dental Sciences" },
 ];
 
 export default function Stats() {

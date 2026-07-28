@@ -24,7 +24,7 @@ export default function Research() {
           </div>
           <m.p variants={fadeUp}
             className="text-[15px] text-slate-500 dark:text-white/45 max-w-sm leading-[1.7]">
-            Peer-reviewed contributions to orthodontic science across indexed journals.
+            Published research and conference contributions in orthodontic science.
           </m.p>
         </m.div>
 
@@ -57,8 +57,8 @@ export default function Research() {
               </div>
 
               <div className="flex items-center gap-4 justify-end">
-                <span className="text-[12px] font-bold bg-teal-50 dark:bg-teal-400/10 text-teal-700 dark:text-teal-400 px-3 py-1 rounded-full">
-                  {paper.year}
+                <span className="text-[12px] font-bold bg-teal-50 dark:bg-teal-400/10 text-teal-700 dark:text-teal-400 px-3 py-1 rounded-full whitespace-nowrap">
+                  {paper.type}
                 </span>
                 <m.div whileHover={{ scale: 1.2, rotate: 10 }} transition={{ duration: 0.2 }}>
                   <ExternalLink size={14} className="text-slate-300 dark:text-white/20 group-hover:text-teal-500 transition-colors shrink-0" />

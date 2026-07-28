@@ -1,34 +1,20 @@
 export const publications = [
   {
     id: 1,
+    type: "Publication",
     title:
-      "Comparative Evaluation of Clear Aligners and Conventional Braces",
+      "Evaluation of Anterior Alveolar Dimension in North Indian Population",
     journal:
-      "Journal of Clinical Orthodontics",
-    year: "2022",
+      "Asian Journal of Dental Sciences",
+    year: "",
   },
   {
     id: 2,
+    type: "Conference Presentation",
     title:
-      "Modern Approaches in Smile Design",
+      "Evaluation of Enamel Surface Roughness",
     journal:
-      "International Orthodontic Review",
-    year: "2021",
-  },
-  {
-    id: 3,
-    title:
-      "Impact of Early Orthodontic Intervention",
-    journal:
-      "Dental Research Journal",
-    year: "2020",
-  },
-  {
-    id: 4,
-    title:
-      "Digital Orthodontics and Future Trends",
-    journal:
-      "Journal of Dental Innovation",
-    year: "2023",
+      "National Conference, Rajahmundry, Andhra Pradesh",
+    year: "",
   },
 ];

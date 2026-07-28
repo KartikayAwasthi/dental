@@ -8,22 +8,20 @@ import { fadeUp, stagger, viewportOpts } from "@/lib/animations";
 
 const navLinks = [
   ["🩺 About",            "#about"     ],
-  ["🦷 Cases Accepted",   "#services"  ],
-  ["✅ Why Refer",        "#why"       ],
-  ["📋 Referral Process", "#process"   ],
+  ["🦷 Services",         "#services"  ],
+  ["✅ Why Choose Us",    "#why"       ],
+  ["📅 How to Book",      "#process"   ],
   ["🔬 Research",         "#research"  ],
-  ["📸 Outcomes",         "#gallery"   ],
+  ["📸 Gallery",          "#gallery"   ],
   ["❓ FAQs",             "#faqs"      ],
-  ["📤 Send Referral",    "#referral"  ],
+  ["📅 Book Appointment", "#referral"  ],
 ];
 
 const credentials = [
-  "🎓 MDS — Orthodontics · KGMU",
-  "🎓 BDS — KGMU, Lucknow",
+  "🎓 MDS — Orthodontics, ABVMU Lucknow",
+  "🎓 BDS — KD Dental College, Mathura",
   "🏥 AIIMS Delhi Certified",
-  "📋 UP Dental Council Reg. A23844",
-  "🏅 Indian Orthodontic Society",
-  "🌍 World Federation of Orthodontists",
+  "💡 Lasers in Dentistry Certified",
 ];
 
 export default function Footer() {
@@ -39,15 +37,15 @@ export default function Footer() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="container mx-auto px-6 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-2xl font-bold">📋 Ready to refer a case?</p>
-            <p className="text-white/40 text-sm mt-1">Submit online — response within 24 hours ⚡</p>
+            <p className="text-2xl font-bold">📅 Ready to book an appointment?</p>
+            <p className="text-white/40 text-sm mt-1">Reach out by phone, WhatsApp, or the form below.</p>
           </div>
           <a href="#referral"
             className="shrink-0 flex items-center gap-2
               bg-teal-500 hover:bg-teal-400
               text-[#03080f] font-bold text-sm px-6 py-3.5 rounded-xl
               transition-colors shadow-lg shadow-teal-500/20">
-            Send a Referral <ArrowRight size={14} />
+            Book Appointment <ArrowRight size={14} />
           </a>
         </m.div>
       </div>
@@ -62,11 +60,11 @@ export default function Footer() {
             <p className="text-[15px] font-bold">Dr. Taruna Pratap Singh</p>
           </div>
           <p className="text-[10px] font-semibold text-teal-400 uppercase tracking-widest mt-1">
-            MDS · Consultant Orthodontist
+            MDS Orthodontics & Dentofacial Orthopaedics
           </p>
           <p className="mt-5 text-sm text-white/35 leading-[1.8] max-w-xs">
-            Specialist Orthodontic Consultant accepting referrals from dentists, physicians, and
-            specialists across Uttar Pradesh and Delhi NCR.
+            Comprehensive dental and orthodontic care at Saraswati Dental Care, Goverdhan, and
+            Shree Siyaram Multispeciality Dental Care, Mathura.
           </p>
           <div className="mt-6 space-y-3">
             {[
@@ -86,8 +84,6 @@ export default function Footer() {
           <div className="flex gap-3 mt-6">
             {[
               { href: DOCTOR_WHATSAPP, label: "💬 WhatsApp" },
-              { href: "#",             label: "📷 Instagram" },
-              { href: "#",             label: "👍 Facebook" },
             ].map(({ href, label }) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
                 className="text-[11px] font-medium px-3 py-1.5 rounded-full bg-white/5 hover:bg-teal-500/20 text-white/40 hover:text-teal-400 transition-colors">
@@ -130,7 +126,7 @@ export default function Footer() {
             © 2026 Dr. Taruna Pratap Singh. All rights reserved. 🦷
           </p>
           <p className="text-[12px] text-white/20">
-            UP Dental Council Reg. A23844 · IOS Member · WFO Member
+            Mathura, Uttar Pradesh, India
           </p>
         </div>
       </div>

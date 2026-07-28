@@ -9,7 +9,7 @@ export default function QuickContactForm() {
       onSubmit={e => {
         e.preventDefault();
         const fd  = new FormData(e.currentTarget);
-        const txt = `*Professional Enquiry*\n\nFrom: ${fd.get("name")}\nEmail: ${fd.get("email")}\nPhone: ${fd.get("phone") || "—"}\n\n${fd.get("message")}`;
+        const txt = `*New Enquiry*\n\nFrom: ${fd.get("name")}\nEmail: ${fd.get("email")}\nPhone: ${fd.get("phone") || "—"}\n\n${fd.get("message")}`;
         window.open(`https://wa.me/918218466101?text=${encodeURIComponent(txt)}`, "_blank", "noopener,noreferrer");
       }}
       className="space-y-3"
@@ -20,7 +20,7 @@ export default function QuickContactForm() {
       </div>
       <input name="email" required type="email" placeholder="Email Address *" className={cls} />
       <textarea name="message" required rows={4}
-        placeholder="Case discussion or professional enquiry *" className={cls} />
+        placeholder="Your question or message *" className={cls} />
       <button type="submit"
         className="w-full flex items-center justify-center gap-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-teal-600 dark:hover:bg-teal-400 font-semibold text-sm py-3.5 rounded-xl transition-colors">
         <Send size={13}/> Send via WhatsApp

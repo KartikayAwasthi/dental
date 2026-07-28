@@ -7,34 +7,34 @@ import { fadeUp, stagger, viewportOpts } from "@/lib/animations";
 const steps = [
   {
     icon: Send,
-    emoji: "📋",
+    emoji: "💬",
     step: "Step 01",
-    title: "Submit the Referral",
-    body: "Fill the referral form with patient details and case description. Takes under 3 minutes.",
+    title: "Reach Out",
+    body: "Call, WhatsApp, or fill in the appointment form with your name, concern, and preferred timing.",
     color: "teal",
   },
   {
     icon: Clock,
     emoji: "⏱️",
     step: "Step 02",
-    title: "Confirmed Within 24h",
-    body: "Dr. Taruna reviews the referral and contacts you to confirm the appointment date.",
+    title: "Confirm a Slot",
+    body: "Dr. Taruna or the clinic team gets back to you to confirm a convenient appointment slot.",
     color: "cyan",
   },
   {
     icon: CalendarCheck,
     emoji: "🗓️",
     step: "Step 03",
-    title: "Patient Consultation",
-    body: "Your patient attends the specialist consultation at the clinic in Mathura by prior appointment.",
+    title: "Clinic Visit",
+    body: "Attend your consultation at Saraswati Dental Care, Goverdhan, or Shree Siyaram Multispeciality Dental Care, Mathura.",
     color: "emerald",
   },
   {
     icon: FileText,
     emoji: "📄",
     step: "Step 04",
-    title: "Case Report Returned",
-    body: "Written diagnosis, treatment plan, appliance rationale, and duration estimate — returned to you. Updates continue throughout treatment.",
+    title: "Diagnosis & Treatment Plan",
+    body: "Receive a clear diagnosis and treatment plan, with guidance on oral hygiene and preventive care.",
     color: "teal",
   },
 ];
@@ -57,11 +57,11 @@ export default function Availability() {
           </m.p>
           <m.h2 variants={fadeUp}
             className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-            The Referral Process 📋
+            How to Book an Appointment 📅
           </m.h2>
           <m.p variants={fadeUp}
             className="mt-4 text-white/45 text-[15px] max-w-lg mx-auto leading-[1.75]">
-            Four simple steps from your first message to a case report in your inbox.
+            Four simple steps from your first message to your treatment plan.
           </m.p>
         </m.div>
 
@@ -107,7 +107,7 @@ export default function Availability() {
           <a href="#referral"
             className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400
               text-slate-900 font-bold px-8 py-4 rounded-xl transition-colors text-sm shadow-lg shadow-teal-500/20">
-            Start the Referral Process
+            Book Your Appointment
             <Send size={14} />
           </a>
         </m.div>

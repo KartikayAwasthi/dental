@@ -6,6 +6,7 @@ import ChatBot         from "@/components/ui/ChatBot";
 
 import Hero            from "@/components/sections/Hero";
 import AboutDoctor     from "@/components/sections/AboutDoctor";
+import Milestones      from "@/components/sections/Milestones";
 import Services        from "@/components/sections/Services";
 import WhyChooseUs     from "@/components/sections/WhyChooseUs";
 import Availability    from "@/components/sections/Availability";
@@ -29,14 +30,14 @@ const jsonLd = {
       familyName: "Pratap Singh",
       honorificPrefix: "Dr.",
       honorificSuffix: "MDS",
-      jobTitle: "Consultant Orthodontist & Dentofacial Orthopaedist",
+      jobTitle: "Orthodontist & Dental Surgeon",
       description:
-        "MDS-qualified Consultant Orthodontist from King George Medical University, Lucknow. Specialist in braces, clear aligners, lingual orthodontics, jaw correction, and surgical orthodontics. Accepting specialist referrals from dentists and doctors across UP and Delhi NCR.",
+        "MDS in Orthodontics & Dentofacial Orthopaedics, practising comprehensive dental and orthodontic care in Mathura, Uttar Pradesh. Experienced in fixed braces, clear aligner therapy, root canal treatment, restorative dentistry, and preventive dental care.",
       url: BASE,
       image: {
         "@type": "ImageObject",
         url: `${BASE}/images/doctor/doctor.jpeg`,
-        description: "Dr. Taruna Pratap Singh — Consultant Orthodontist",
+        description: "Dr. Taruna Pratap Singh — Orthodontist & Dental Surgeon",
       },
       telephone: "+918218466101",
       email: "tarunapratapsingh@gmail.com",
@@ -51,8 +52,11 @@ const jsonLd = {
       alumniOf: [
         {
           "@type": "EducationalOrganization",
-          name: "King George Medical University, Lucknow",
-          url: "https://www.kgmu.org",
+          name: "Atal Bihari Vajpayee Medical University, Lucknow",
+        },
+        {
+          "@type": "EducationalOrganization",
+          name: "KD Dental College, Mathura",
         },
       ],
       hasCredential: [
@@ -61,94 +65,59 @@ const jsonLd = {
           name: "MDS — Orthodontics & Dentofacial Orthopaedics",
           credentialCategory: "degree",
           educationalLevel: "Postgraduate",
-          recognizedBy: { "@type": "Organization", name: "King George Medical University" },
-          dateCreated: "2012",
+          recognizedBy: { "@type": "Organization", name: "Atal Bihari Vajpayee Medical University, Lucknow" },
         },
         {
           "@type": "EducationalOccupationalCredential",
           name: "BDS — Bachelor of Dental Surgery",
           credentialCategory: "degree",
           educationalLevel: "Undergraduate",
-          recognizedBy: { "@type": "Organization", name: "King George Medical University" },
-          dateCreated: "2008",
+          recognizedBy: { "@type": "Organization", name: "KD Dental College, Mathura" },
         },
         {
           "@type": "EducationalOccupationalCredential",
-          name: "Mastering Clear Aligners",
+          name: "Mastering Clear Aligners: Advanced Orthodontic Practice",
           credentialCategory: "certificate",
           recognizedBy: { "@type": "Organization", name: "AIIMS Delhi" },
-          dateCreated: "2018",
         },
         {
           "@type": "EducationalOccupationalCredential",
-          name: "Certified Invisalign Provider",
+          name: "Clinical Application of Lasers in Dentistry",
           credentialCategory: "certificate",
-          recognizedBy: { "@type": "Organization", name: "Align Technology" },
-          dateCreated: "2018",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          name: "Max Emergency Life Support Course",
+          credentialCategory: "certificate",
         },
       ],
-      memberOf: [
-        { "@type": "Organization", name: "Indian Orthodontic Society" },
-        { "@type": "Organization", name: "World Federation of Orthodontists" },
-      ],
       medicalSpecialty: "Orthodontics",
-      identifier: {
-        "@type": "PropertyValue",
-        name: "UP Dental Council Registration",
-        value: "A23844",
-      },
       knowsAbout: [
         "Orthodontics",
         "Dentofacial Orthopaedics",
         "Clear Aligners",
-        "Invisalign",
         "Fixed Braces",
-        "Lingual Orthodontics",
-        "Surgical Orthodontics",
-        "Jaw Correction",
-        "Pediatric Orthodontics",
-        "Digital Orthodontics",
-        "Pre-surgical Orthodontic Planning",
+        "Root Canal Treatment",
+        "Restorative Dentistry",
+        "Preventive Dental Care",
+        "Pediatric Dental Procedures",
       ],
       areaServed: [
         { "@type": "City", name: "Mathura" },
-        { "@type": "City", name: "Agra" },
-        { "@type": "City", name: "Noida" },
-        { "@type": "City", name: "Delhi" },
-        { "@type": "City", name: "Gurgaon" },
-        { "@type": "City", name: "Etawah" },
+        { "@type": "City", name: "Goverdhan" },
       ],
       hasOccupation: {
         "@type": "Occupation",
-        name: "Orthodontist",
+        name: "Orthodontist & Dental Surgeon",
         occupationLocation: { "@type": "City", name: "Mathura" },
-        skills: "Orthodontics, Dentofacial Orthopaedics, Clear Aligners, Lingual Orthodontics, Jaw Correction",
+        skills: "Orthodontics, Dentofacial Orthopaedics, Clear Aligners, Root Canal Treatment, Restorative Dentistry, Preventive Dental Care",
       },
       publishingPrinciples: `${BASE}/#doctor`,
       workExample: [
         {
           "@type": "ScholarlyArticle",
-          headline: "Comparative Evaluation of Clear Aligners and Conventional Braces",
-          datePublished: "2022",
-          publisher: { "@type": "Organization", name: "Journal of Clinical Orthodontics" },
-        },
-        {
-          "@type": "ScholarlyArticle",
-          headline: "Modern Approaches in Smile Design",
-          datePublished: "2021",
-          publisher: { "@type": "Organization", name: "International Orthodontic Review" },
-        },
-        {
-          "@type": "ScholarlyArticle",
-          headline: "Impact of Early Orthodontic Intervention",
-          datePublished: "2020",
-          publisher: { "@type": "Organization", name: "Dental Research Journal" },
-        },
-        {
-          "@type": "ScholarlyArticle",
-          headline: "Digital Orthodontics and Future Trends",
-          datePublished: "2023",
-          publisher: { "@type": "Organization", name: "Journal of Dental Innovation" },
+          headline: "Evaluation of Anterior Alveolar Dimension in North Indian Population",
+          publisher: { "@type": "Organization", name: "Asian Journal of Dental Sciences" },
         },
       ],
     },
@@ -156,9 +125,9 @@ const jsonLd = {
     {
       "@type": ["MedicalClinic", "Dentist", "LocalBusiness"],
       "@id": `${BASE}/#clinic`,
-      name: "Dr. Taruna Pratap Singh — Consultant Orthodontist",
+      name: "Dr. Taruna Pratap Singh — Dental & Orthodontic Care",
       description:
-        "Specialist orthodontic referral practice in Mathura, Uttar Pradesh. Consultant Orthodontist (MDS, KGMU) accepting specialist referrals for complex orthodontic cases from dentists and doctors across UP and Delhi NCR.",
+        "Dental and orthodontic care in Mathura, Uttar Pradesh, provided by Dr. Taruna Pratap Singh (MDS Orthodontics & Dentofacial Orthopaedics) at Saraswati Dental Care, Goverdhan, and Shree Siyaram Multispeciality Dental Care, Mathura.",
       url: BASE,
       telephone: "+918218466101",
       email: "tarunapratapsingh@gmail.com",
@@ -184,37 +153,16 @@ const jsonLd = {
       paymentAccepted: "Cash, UPI, Card",
       areaServed: [
         { "@type": "City", name: "Mathura" },
-        { "@type": "City", name: "Agra" },
-        { "@type": "City", name: "Noida" },
-        { "@type": "City", name: "Delhi" },
-        { "@type": "City", name: "Gurgaon" },
-        { "@type": "City", name: "Etawah" },
+        { "@type": "City", name: "Goverdhan" },
       ],
-      founder: { "@id": `${BASE}/#doctor` },
       employee: { "@id": `${BASE}/#doctor` },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "10:00",
-          closes: "17:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Saturday",
-          opens: "10:00",
-          closes: "14:00",
-        },
-      ],
       availableService: [
         { "@type": "MedicalProcedure", name: "Fixed Orthodontic Treatment (Metal & Ceramic Braces)" },
-        { "@type": "MedicalProcedure", name: "Clear Aligner Therapy (Invisalign)" },
-        { "@type": "MedicalProcedure", name: "Lingual Orthodontics" },
-        { "@type": "MedicalProcedure", name: "Surgical Orthodontics & Pre-Surgical Planning" },
-        { "@type": "MedicalProcedure", name: "Early Orthodontic Intervention (Pediatric)" },
-        { "@type": "MedicalProcedure", name: "Dentofacial Orthopaedics & Jaw Correction" },
-        { "@type": "MedicalProcedure", name: "Self-Ligating Brackets" },
-        { "@type": "MedicalProcedure", name: "Digital Orthodontic Planning" },
+        { "@type": "MedicalProcedure", name: "Clear Aligner Therapy" },
+        { "@type": "MedicalProcedure", name: "Root Canal Treatment" },
+        { "@type": "MedicalProcedure", name: "Restorative Dentistry & Crown Preparation" },
+        { "@type": "MedicalProcedure", name: "Scaling, Polishing & Preventive Dental Care" },
+        { "@type": "MedicalProcedure", name: "Extractions & Pediatric Dental Procedures" },
       ],
     },
 
@@ -222,9 +170,9 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": `${BASE}/#website`,
       url: BASE,
-      name: "Dr. Taruna Pratap Singh — Consultant Orthodontist",
+      name: "Dr. Taruna Pratap Singh — Dental & Orthodontic Care",
       description:
-        "Specialist orthodontic referral website for dentists and doctors in UP and Delhi NCR.",
+        "Official website of Dr. Taruna Pratap Singh, MDS Orthodontics & Dentofacial Orthopaedics, practising in Mathura, Uttar Pradesh.",
       publisher: { "@id": `${BASE}/#doctor` },
       inLanguage: "en-IN",
     },
@@ -253,7 +201,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           position: 4,
-          name: "Referral Process",
+          name: "How to Book",
           item: `${BASE}/#process`,
         },
         {
@@ -270,66 +218,58 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What types of cases should I refer to Dr. Taruna?",
+          name: "What treatments does Dr. Taruna offer?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You should refer cases requiring specialist orthodontic assessment — including severe crowding, spacing, skeletal jaw discrepancies, bite problems, patients requesting lingual orthodontics or clear aligners, and any case beyond routine dental management. Early intervention cases in growing children are also welcome.",
+            text: "Dr. Taruna provides fixed orthodontic treatment with metal and ceramic braces, clear aligner therapy, root canal treatment, restorative dentistry and crown preparation, scaling and preventive dental care, and extractions — including pediatric dental procedures.",
           },
         },
         {
           "@type": "Question",
-          name: "What clinical information should I include when referring?",
+          name: "Do you treat children as well as adults?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Please share the patient's chief complaint, approximate age, any existing radiographs (OPG, lateral cephalogram if available), intraoral photographs if taken, and your clinical observations. You can submit these details through the referral form and follow up via WhatsApp. No extensive workup is needed before referring.",
+            text: "Yes. General dental care and pediatric dental procedures are offered alongside orthodontic treatment, so patients of all ages can be seen.",
           },
         },
         {
           "@type": "Question",
-          name: "How quickly will my referred patient be seen?",
+          name: "Do you offer clear aligners in addition to braces?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Dr. Taruna typically responds to new referral submissions within 24 hours to confirm availability. Patient consultations are scheduled by prior appointment and are usually available within 3–7 working days depending on location and case complexity.",
+            text: "Yes. Alongside traditional metal and ceramic fixed braces, clear aligner therapy is offered as a more discreet treatment option depending on the case.",
           },
         },
         {
           "@type": "Question",
-          name: "Will I receive a case report after the consultation?",
+          name: "How do I book an appointment?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. After the initial consultation, a detailed case summary — including diagnosis, proposed treatment plan, appliance selection rationale, and estimated treatment duration — is shared with the referring doctor. You remain updated throughout the treatment course.",
+            text: "You can call or WhatsApp directly, use the appointment form on this website, or send an email. Appointments are confirmed based on availability at the clinic.",
           },
         },
         {
           "@type": "Question",
-          name: "Do you accept interdisciplinary and surgical orthodontic cases?",
+          name: "Where does Dr. Taruna practise?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Dr. Taruna has experience in pre-surgical orthodontic planning and coordinates with maxillofacial surgeons for combined orthodontic-surgical cases. Interdisciplinary cases involving periodontics or prosthodontics are also accepted.",
+            text: "Dr. Taruna practises at Saraswati Dental Care, Goverdhan, and Shree Siyaram Multispeciality Dental Care, Mathura.",
           },
         },
         {
           "@type": "Question",
-          name: "Can I discuss a complex case before formally referring?",
+          name: "What happens at the first visit?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Absolutely. You can contact Dr. Taruna directly via WhatsApp or phone to discuss a case informally before submitting a formal referral. This is encouraged for unusual or complex presentations to ensure the referral is appropriate.",
+            text: "The first visit includes a comprehensive oral examination, diagnosis, and treatment planning, along with guidance on oral hygiene and preventive care.",
           },
         },
         {
           "@type": "Question",
-          name: "What is the referral process from start to finish?",
+          name: "Is an appointment required, or can I walk in?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Submit the referral form on this website with the patient details and case description. Dr. Taruna contacts you within 24 hours to confirm the appointment. The patient attends the consultation. A written case report is then shared with you. You are kept in the loop throughout active treatment.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Which cities do you serve for orthodontic consultations?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Dr. Taruna currently accepts referrals for patients based in or able to travel to Mathura, Agra, Noida, Delhi, Gurgaon, and Etawah. Consultations are available at the base clinic in Mathura by prior appointment.",
+            text: "A prior appointment is recommended to avoid waiting time, though the clinics can also be contacted directly for same-day availability.",
           },
         },
       ],
@@ -351,6 +291,7 @@ export default function HomePage() {
       <main>
         <Hero />
         <AboutDoctor />
+        <Milestones />
         <Services />
         <WhyChooseUs />
         <Availability />

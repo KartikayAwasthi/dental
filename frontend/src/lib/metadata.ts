@@ -9,34 +9,22 @@ export const siteMetadata: Metadata = {
   },
 
   description:
-    "MDS Consultant Orthodontist (KGMU), Mathura — specialist referrals for braces, clear aligners, lingual orthodontics & jaw correction across UP and Delhi NCR.",
+    "Dr. Taruna Pratap Singh, MDS Orthodontics & Dentofacial Orthopaedics — dental and orthodontic care in Mathura, UP. Braces, clear aligners, root canal, restorative & preventive dental care.",
 
   keywords: [
     "Dr Taruna Pratap Singh",
     "Dr Taruna orthodontist",
     "Taruna Pratap Singh Mathura",
     "Taruna Pratap Singh orthodontist",
-    "Consultant Orthodontist Mathura",
     "Orthodontist Mathura UP",
-    "MDS Orthodontics KGMU",
-    "Orthodontic Specialist UP",
-    "Clear Aligner Specialist Mathura",
-    "Lingual Orthodontics UP",
-    "Orthodontic Referral UP",
-    "Jaw Correction Specialist India",
-    "Braces Specialist Mathura",
-    "Orthodontist Agra",
-    "Orthodontist Noida Delhi NCR",
-    "Dental Referral Mathura",
-    "Dentofacial Orthopaedics KGMU",
-    "Invisible Braces UP",
-    "Invisalign Provider UP",
-    "Pediatric Orthodontics UP",
-    "Surgical Orthodontics India",
-    "KGMU Orthodontist",
-    "UP Dental Council A23844",
-    "Indian Orthodontic Society",
-    "Specialist Orthodontic Referral",
+    "Dentist Mathura",
+    "MDS Orthodontics Dentofacial Orthopaedics",
+    "Clear Aligner Therapy Mathura",
+    "Braces Mathura",
+    "Root Canal Treatment Mathura",
+    "Pediatric Dental Care Mathura",
+    "Saraswati Dental Care Goverdhan",
+    "Shree Siyaram Multispeciality Dental Care Mathura",
   ],
 
   authors: [{ name: "Dr. Taruna Pratap Singh", url: "https://drtaruna.com" }],
@@ -64,19 +52,19 @@ export const siteMetadata: Metadata = {
   },
 
   openGraph: {
-    title: "Dr. Taruna Pratap Singh | MDS Consultant Orthodontist | Mathura",
+    title: "Dr. Taruna Pratap Singh | MDS Orthodontist | Mathura",
     description:
-      "Specialist Consultant Orthodontist (MDS, KGMU) in Mathura — accepting referrals from dentists and doctors across UP and Delhi NCR for braces, clear aligners, lingual orthodontics & jaw correction.",
+      "Dr. Taruna Pratap Singh (MDS Orthodontics & Dentofacial Orthopaedics) provides dental and orthodontic care in Mathura — braces, clear aligners, root canal, restorative & preventive dental care.",
     type: "website",
     locale: "en_IN",
     url: "https://drtaruna.com",
-    siteName: "Dr. Taruna Pratap Singh — Consultant Orthodontist",
+    siteName: "Dr. Taruna Pratap Singh — Dental & Orthodontic Care",
     images: [
       {
         url: "/images/doctor/doctor.jpeg",
         width: 1200,
         height: 630,
-        alt: "Dr. Taruna Pratap Singh — MDS Consultant Orthodontist, Mathura",
+        alt: "Dr. Taruna Pratap Singh — MDS Orthodontist, Mathura",
         type: "image/jpeg",
       },
     ],
@@ -84,9 +72,9 @@ export const siteMetadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Taruna Pratap Singh | MDS Consultant Orthodontist | Mathura",
+    title: "Dr. Taruna Pratap Singh | MDS Orthodontist | Mathura",
     description:
-      "MDS Specialist Orthodontist (KGMU) accepting referrals across UP & Delhi NCR. Braces, clear aligners, lingual orthodontics, jaw correction.",
+      "MDS Orthodontist & Dental Surgeon in Mathura. Braces, clear aligners, root canal, restorative & preventive dental care.",
     images: ["/images/doctor/doctor.jpeg"],
   },
 
@@ -95,14 +83,13 @@ export const siteMetadata: Metadata = {
     "geo.placename": "Mathura, Uttar Pradesh, India",
     "geo.position": "27.4924;77.6737",
     ICBM: "27.4924, 77.6737",
-    "DC.title": "Dr. Taruna Pratap Singh — Consultant Orthodontist",
+    "DC.title": "Dr. Taruna Pratap Singh — Dental & Orthodontic Care",
     "DC.description":
-      "MDS Consultant Orthodontist (KGMU) in Mathura. Specialist referrals for braces, clear aligners, lingual orthodontics, jaw correction.",
-    "DC.subject": "Orthodontics, Dentofacial Orthopaedics",
+      "MDS Orthodontist & Dental Surgeon in Mathura. Braces, clear aligners, root canal, restorative & preventive dental care.",
+    "DC.subject": "Orthodontics, Dentofacial Orthopaedics, General Dentistry",
     "DC.creator": "Dr. Taruna Pratap Singh",
     "DC.language": "en",
-    "DC.coverage":
-      "Mathura, Agra, Noida, Delhi, Gurgaon, Etawah, Uttar Pradesh, India",
+    "DC.coverage": "Mathura, Goverdhan, Uttar Pradesh, India",
     "DC.rights": "Dr. Taruna Pratap Singh",
   },
 };

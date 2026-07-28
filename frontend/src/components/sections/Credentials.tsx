@@ -39,9 +39,11 @@ export default function Credentials() {
                 {item.institution}
               </p>
 
-              <span className="inline-block mt-5 px-3 py-1 bg-teal-50 dark:bg-teal-900/20 text-teal-700 dark:text-teal-400 rounded-full text-xs font-semibold">
-                {item.year}
-              </span>
+              {item.year && (
+                <span className="inline-block mt-5 px-3 py-1 bg-teal-50 dark:bg-teal-900/20 text-teal-700 dark:text-teal-400 rounded-full text-xs font-semibold">
+                  {item.year}
+                </span>
+              )}
             </div>
           ))}
         </div>

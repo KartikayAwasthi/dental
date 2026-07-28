@@ -1,44 +1,44 @@
 export const testimonials = [
   {
-    name: "Dr. Amit Sharma",
-    treatment: "BDS, General Dentist — Mathura",
+    name: "Priya S.",
+    treatment: "Clear Aligner Therapy",
     rating: 5,
     review:
-      "I've been referring complex orthodontic cases to Dr. Taruna for over four years. The case reports are thorough, timely, and my patients consistently report excellent experiences. A truly reliable specialist for referrals.",
+      "Started clear aligners with Dr. Taruna a few months ago and I'm really happy with the progress so far. She explains every step clearly before moving ahead.",
   },
   {
-    name: "Dr. Priya Mehta",
-    treatment: "MDS Pediatric Dentistry — Agra",
+    name: "Rohan K.",
+    treatment: "Fixed Braces",
     rating: 5,
     review:
-      "Dr. Taruna is my first call for any child requiring early orthodontic intervention. Her assessment is detailed, her communication with referring doctors is outstanding, and her outcomes speak for themselves.",
+      "Got my braces done here. The clinic is clean, appointments are on time, and Dr. Taruna is very patient in answering questions.",
   },
   {
-    name: "Dr. Rakesh Gupta",
-    treatment: "MDS Prosthodontics — Noida",
+    name: "Anita M.",
+    treatment: "Root Canal Treatment",
     rating: 5,
     review:
-      "For complex interdisciplinary cases — where orthodontics and prosthodontics intersect — Dr. Taruna is exceptional. Her surgical-orthodontic planning for one of my patients was among the most thorough I've seen.",
+      "Was dreading my root canal but the procedure was smooth and almost painless. Very gentle approach and clear aftercare instructions.",
   },
   {
-    name: "Dr. Sunita Verma",
-    treatment: "MBBS, General Physician — Gurgaon",
+    name: "Vikram T.",
+    treatment: "Scaling & Preventive Care",
     rating: 5,
     review:
-      "As a GP, I often see patients asking about braces and aligners. Referring them to Dr. Taruna has always been the right decision. She explains everything to the patient clearly and sends me a proper case update.",
+      "Regular cleaning and checkup — quick, thorough, and Dr. Taruna always takes the time to point out things to watch for at home.",
   },
   {
-    name: "Dr. Vivek Tiwari",
-    treatment: "BDS, MDS Oral Surgery — Etawah",
+    name: "Sneha D.",
+    treatment: "Pediatric Dental Care",
     rating: 5,
     review:
-      "Pre-surgical orthodontic work done by Dr. Taruna before our orthognathic cases is meticulous. She understands the surgical goals and aligns the orthodontic plan accordingly. A genuine pleasure to collaborate with.",
+      "My daughter is usually nervous at the dentist but Dr. Taruna was calm and friendly with her. Made the whole visit stress-free for both of us.",
   },
   {
-    name: "Dr. Anjali Singh",
-    treatment: "BDS, Dental Surgeon — Delhi",
+    name: "Arjun P.",
+    treatment: "Restorative Dentistry",
     rating: 5,
     review:
-      "The referral process is seamless — the online form, the quick response, the consultation, and the written case summary. My patients return with excellent results and I receive professional case communication every step of the way.",
+      "Needed a crown done and the fit and finish were excellent. Good attention to detail and fair pricing for the work done.",
   },
 ];

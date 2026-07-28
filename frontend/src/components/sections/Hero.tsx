@@ -3,15 +3,15 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { m } from "@/lib/motion";
-import { ArrowRight, Phone, Star } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import { fadeUp, stagger, viewportOpts } from "@/lib/animations";
 
 const stats = [
-  { end: 5000, suffix: "+", label: "Cases Managed",      icon: "🦷" },
-  { end: 15,   suffix: "+", label: "Years in Practice",  icon: "🏅" },
-  { end: 4,    suffix: "",  label: "Publications",        icon: "🔬" },
-  { end: 98,   suffix: "%", label: "Outcome Satisfaction",icon: "⭐" },
+  { end: 3, suffix: "+", label: "Years in Practice",     icon: "🏅" },
+  { end: 2, suffix: "",  label: "Practice Locations",     icon: "🏥" },
+  { end: 6, suffix: "+", label: "Core Treatment Skills",  icon: "🦷" },
+  { end: 1, suffix: "",  label: "Published Research",     icon: "🔬" },
 ];
 
 export default function Hero() {
@@ -55,7 +55,7 @@ export default function Hero() {
                 border border-teal-200 bg-teal-50/80 dark:border-teal-500/25 dark:bg-teal-500/8 mb-8">
                 <span className="text-base">🩺</span>
                 <span className="text-[12px] font-semibold text-teal-700 dark:text-teal-300 tracking-wide">
-                  Specialist Referrals — Orthodontics
+                  Orthodontics & General Dentistry
                 </span>
               </div>
             </m.div>
@@ -64,18 +64,18 @@ export default function Hero() {
             <m.h1 variants={fadeUp}
               className="text-5xl md:text-6xl xl:text-[68px] font-extrabold leading-[1.05] tracking-[-0.03em]
                 text-slate-900 dark:text-white">
-              Consultant
+              Expert
               <br />
-              <span className="teal-text">Orthodontist</span>
+              <span className="teal-text">Dental & Orthodontic</span>
               <br />
-              for Referring Doctors
+              Care in Mathura
             </m.h1>
 
             <m.p variants={fadeUp}
               className="mt-6 text-[17px] leading-[1.8] text-slate-600 dark:text-white/55 max-w-lg">
-              Dr. Taruna Pratap Singh <span className="font-semibold text-slate-800 dark:text-white/80">(MDS, KGMU)</span> accepts
-              specialist orthodontic referrals from dentists, physicians, and specialists across
-              Mathura, Agra, and Delhi NCR. Written case reports returned to every referring doctor.
+              Dr. Taruna Pratap Singh <span className="font-semibold text-slate-800 dark:text-white/80">(MDS Orthodontics & Dentofacial Orthopaedics)</span> provides
+              comprehensive dental and orthodontic care at Saraswati Dental Care, Goverdhan, and
+              Shree Siyaram Multispeciality Dental Care, Mathura.
             </m.p>
 
             {/* CTAs */}
@@ -86,7 +86,7 @@ export default function Hero() {
                   text-white dark:text-[#06111f]
                   font-bold px-6 py-3.5 rounded-xl text-sm shadow-sm shadow-teal-200 dark:shadow-none
                   transition-colors duration-200">
-                📋 Send a Referral
+                📅 Book an Appointment
                 <ArrowRight size={15} />
               </a>
               <a href="tel:+918218466101"
@@ -119,24 +119,18 @@ export default function Hero() {
               ))}
             </m.div>
 
-            {/* Trust row */}
-            <m.div variants={fadeUp} className="mt-8 flex items-center gap-3">
-              <div className="flex -space-x-2">
-                {[1,2,3,4].map(i => (
-                  <div key={i} className="w-7 h-7 rounded-full border-2 border-white dark:border-[#06111f]
-                    bg-teal-100 dark:bg-teal-900 flex items-center justify-center text-[10px]">
-                    {["👨‍⚕️","👩‍⚕️","🧑‍⚕️","👨‍⚕️"][i-1]}
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_,i) => (
-                  <Star key={i} size={11} className="fill-amber-400 text-amber-400" />
-                ))}
-              </div>
-              <p className="text-[12px] text-slate-500 dark:text-white/35 font-medium">
-                Trusted by 200+ referring doctors
-              </p>
+            {/* Practice locations */}
+            <m.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-2">
+              <span className="text-[12px] font-medium px-3 py-1.5 rounded-full
+                bg-teal-50 dark:bg-teal-400/10 text-teal-700 dark:text-teal-400
+                border border-teal-100 dark:border-teal-400/20">
+                🏥 Saraswati Dental Care, Goverdhan
+              </span>
+              <span className="text-[12px] font-medium px-3 py-1.5 rounded-full
+                bg-teal-50 dark:bg-teal-400/10 text-teal-700 dark:text-teal-400
+                border border-teal-100 dark:border-teal-400/20">
+                🏥 Shree Siyaram Multispeciality Dental Care, Mathura
+              </span>
             </m.div>
           </m.div>
 
@@ -177,23 +171,22 @@ export default function Hero() {
                 🎓 Qualifications
               </p>
               {[
-                "MDS — Orthodontics · KGMU",
-                "BDS · KGMU, Lucknow",
+                "MDS — Orthodontics, ABVMU Lucknow",
+                "BDS · KD Dental College, Mathura",
                 "AIIMS Delhi Certified",
-                "UP Dental Council A23844",
               ].map(c => (
                 <p key={c} className="text-[12px] text-slate-700 dark:text-white/70 leading-relaxed">{c}</p>
               ))}
             </m.div>
 
-            {/* 24h response badge */}
+            {/* Specialty badge */}
             <m.div
               initial={{ opacity: 0, scale: 0.7 }}
               animate={mounted ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.7 }}
               transition={{ delay: 0.85, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="absolute top-6 -right-4 z-20 bg-teal-500 rounded-2xl px-4 py-3 shadow-xl shadow-teal-200/50 dark:shadow-none">
-              <p className="text-[10px] text-teal-950 font-bold uppercase tracking-wider">Response</p>
-              <p className="text-2xl font-black text-teal-950 leading-none mt-0.5">24h ⚡</p>
+              <p className="text-[10px] text-teal-950 font-bold uppercase tracking-wider">Specialty</p>
+              <p className="text-xl font-black text-teal-950 leading-none mt-0.5">Ortho 🦷</p>
             </m.div>
           </m.div>
 

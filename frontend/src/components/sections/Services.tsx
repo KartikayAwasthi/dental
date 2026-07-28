@@ -6,25 +6,21 @@ import { referralCases } from "@/data/referralCases";
 import { fadeUp, stagger, scaleIn, viewportOpts } from "@/lib/animations";
 
 const tagStyle: Record<string, string> = {
-  "Fixed / Aligner": "bg-teal-50   text-teal-700   dark:bg-teal-400/10 dark:text-teal-300",
-  "Orthopaedic":     "bg-blue-50   text-blue-700   dark:bg-blue-400/10 dark:text-blue-300",
-  "Aesthetic":       "bg-violet-50 text-violet-700 dark:bg-violet-400/10 dark:text-violet-300",
-  "Clear Aligners":  "bg-cyan-50   text-cyan-700   dark:bg-cyan-400/10 dark:text-cyan-300",
-  "Interdisciplinary":"bg-amber-50 text-amber-700  dark:bg-amber-400/10 dark:text-amber-300",
-  "Paediatric":      "bg-rose-50   text-rose-700   dark:bg-rose-400/10 dark:text-rose-300",
-  "Functional":      "bg-green-50  text-green-700  dark:bg-green-400/10 dark:text-green-300",
-  "Adult":           "bg-slate-100 text-slate-700  dark:bg-white/5 dark:text-slate-300",
+  "Fixed Braces":   "bg-teal-50   text-teal-700   dark:bg-teal-400/10 dark:text-teal-300",
+  "Clear Aligners": "bg-cyan-50   text-cyan-700   dark:bg-cyan-400/10 dark:text-cyan-300",
+  "Endodontics":    "bg-blue-50   text-blue-700   dark:bg-blue-400/10 dark:text-blue-300",
+  "Restorative":    "bg-amber-50  text-amber-700  dark:bg-amber-400/10 dark:text-amber-300",
+  "Preventive":     "bg-green-50  text-green-700  dark:bg-green-400/10 dark:text-green-300",
+  "Pediatric":      "bg-rose-50   text-rose-700   dark:bg-rose-400/10 dark:text-rose-300",
 };
 
 const caseEmoji: Record<string, string> = {
-  "Fixed / Aligner":  "🦷",
-  "Orthopaedic":      "🦴",
-  "Aesthetic":        "✨",
-  "Clear Aligners":   "💎",
-  "Interdisciplinary":"🏥",
-  "Paediatric":       "👶",
-  "Functional":       "⚙️",
-  "Adult":            "🩺",
+  "Fixed Braces":   "🦷",
+  "Clear Aligners": "💎",
+  "Endodontics":    "🩹",
+  "Restorative":    "🦷",
+  "Preventive":     "✨",
+  "Pediatric":      "👶",
 };
 
 export default function Services() {
@@ -39,15 +35,14 @@ export default function Services() {
           viewport={viewportOpts}
           className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
           <div>
-            <m.p variants={fadeUp} className="section-label">🦷 Referral Specialisations</m.p>
+            <m.p variants={fadeUp} className="section-label">🦷 What We Treat</m.p>
             <m.h2 variants={fadeUp} className="section-heading mt-4">
-              Cases Accepted<br/>for Referral
+              Services &<br/>Treatments
             </m.h2>
           </div>
           <m.p variants={fadeUp}
             className="text-[15px] text-slate-500 dark:text-white/45 max-w-sm leading-[1.7]">
-            From routine cases requiring specialist oversight to complex
-            multidisciplinary presentations — all are welcome.
+            Comprehensive orthodontic and general dental care for patients of all ages.
           </m.p>
         </m.div>
 
@@ -86,7 +81,7 @@ export default function Services() {
 
               <div className="flex items-center gap-1 mt-5 text-[12px] font-semibold text-teal-600 dark:text-teal-400
                 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all">
-                Refer this case <ArrowUpRight size={12} />
+                Book a consultation <ArrowUpRight size={12} />
               </div>
             </m.a>
           ))}
@@ -101,12 +96,12 @@ export default function Services() {
           className="mt-12 rounded-2xl bg-teal-600 dark:bg-teal-500/90 p-8
             flex flex-col sm:flex-row items-center justify-between gap-5">
           <div>
-            <p className="font-bold text-white text-lg">🤔 Not sure if your case qualifies?</p>
-            <p className="text-teal-100 text-sm mt-1">Contact Dr. Taruna to discuss before submitting a formal referral.</p>
+            <p className="font-bold text-white text-lg">🤔 Not sure which treatment you need?</p>
+            <p className="text-teal-100 text-sm mt-1">Contact Dr. Taruna to discuss your concern before booking.</p>
           </div>
           <a href="#contact"
             className="shrink-0 bg-white text-teal-700 font-bold text-sm px-6 py-3 rounded-xl hover:bg-teal-50 transition-colors">
-            Discuss a Case
+            Ask a Question
           </a>
         </m.div>
 

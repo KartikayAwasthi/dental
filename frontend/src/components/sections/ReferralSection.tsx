@@ -2,15 +2,15 @@
 
 import { m } from "@/lib/motion";
 import { Phone, Mail, MapPin } from "lucide-react";
-import ReferralForm from "@/components/ui/ReferralForm";
+import AppointmentForm from "@/components/ui/AppointmentForm";
 import { fadeUp, stagger, viewportOpts } from "@/lib/animations";
 import { DOCTOR_PHONE, DOCTOR_PHONE_DISPLAY, DOCTOR_EMAIL } from "@/lib/constants";
 
 const features = [
-  { icon: "📋", text: "Formal referral stored securely" },
-  { icon: "⏱️", text: "Dr. Taruna responds within 24 hours" },
-  { icon: "🗓️", text: "Patient seen within 3–7 working days" },
-  { icon: "📄", text: "Written case report returned to you" },
+  { icon: "📅", text: "Convenient appointment scheduling" },
+  { icon: "🦷", text: "Comprehensive dental & orthodontic care" },
+  { icon: "📝", text: "Clear diagnosis & treatment plan" },
+  { icon: "💬", text: "Direct confirmation via WhatsApp" },
 ];
 
 export default function ReferralSection() {
@@ -27,19 +27,19 @@ export default function ReferralSection() {
             viewport={viewportOpts}>
 
             <m.p variants={fadeUp} className="section-label" style={{ color: "#5eead4" }}>
-              Referral Form
+              Book an Appointment
             </m.p>
 
             <m.h2 variants={fadeUp}
               className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
-              Refer a patient<br/>
-              <span className="teal-text">to Dr. Taruna 🦷</span>
+              Visit<br/>
+              <span className="teal-text">Dr. Taruna 🦷</span>
             </m.h2>
 
             <m.p variants={fadeUp}
               className="mt-5 text-white/45 text-[15px] leading-[1.75] max-w-sm">
-              Complete the form to submit a specialist orthodontic referral.
-              All fields marked with * are required.
+              Fill in the form to request an appointment at Saraswati Dental Care, Goverdhan,
+              or Shree Siyaram Multispeciality Dental Care, Mathura.
             </m.p>
 
             <m.ul variants={stagger(0.08)} className="mt-8 space-y-3">
@@ -73,13 +73,8 @@ export default function ReferralSection() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOpts}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-            className="bg-white dark:bg-white/[0.04] border border-white/10 rounded-3xl p-8">
-            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-1">📋 Submit a Referral</h3>
-            <p className="text-[13px] text-slate-400 dark:text-white/35 mb-7">
-              Dr. Taruna will contact you within 24 hours to confirm.
-            </p>
-            <ReferralForm />
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}>
+            <AppointmentForm />
           </m.div>
 
         </div>

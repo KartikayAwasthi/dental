@@ -2,14 +2,12 @@ import Image from "next/image";
 import { CheckCircle2, Award } from "lucide-react";
 
 const expertiseList = [
-  "Metal & Ceramic Fixed Orthodontics",
-  "Self-Ligating Bracket Systems",
-  "Clear Aligner Therapy (Invisalign Certified)",
-  "Lingual Orthodontics",
-  "Functional & Orthopaedic Jaw Correction",
-  "Surgical Orthodontic Planning",
-  "Early Paediatric Intervention",
-  "Adult Interdisciplinary Orthodontics",
+  "Fixed Orthodontic Treatment (Metal & Ceramic Braces)",
+  "Clear Aligner Therapy",
+  "Root Canal Treatment",
+  "Restorative Dentistry & Crown Preparation",
+  "Scaling, Polishing & Preventive Dental Care",
+  "Extractions & Pediatric Dental Procedures",
 ];
 
 export default function Expertise() {
@@ -35,7 +33,7 @@ export default function Expertise() {
                   <p className="font-bold text-slate-900 dark:text-white text-sm">
                     AIIMS Delhi Certified
                   </p>
-                  <p className="text-xs text-slate-500">Clear Aligner Specialist</p>
+                  <p className="text-xs text-slate-500">Advanced Clear Aligner Course</p>
                 </div>
               </div>
             </div>
@@ -48,18 +46,17 @@ export default function Expertise() {
             </span>
 
             <h2 className="text-4xl md:text-5xl font-bold mt-4 text-slate-900 dark:text-white leading-tight">
-              Advanced Orthodontics
-              Across All Age Groups
+              Comprehensive Dental
+              & Orthodontic Care
             </h2>
 
             <div className="section-divider mt-5 mb-7" />
 
             <p className="text-slate-600 dark:text-slate-300 leading-8">
-              Dr. Taruna Pratap Singh specialises in the diagnosis, planning,
-              and management of complex orthodontic presentations. Her practice
-              combines evidence-based clinical protocols with modern digital
-              orthodontic techniques to deliver predictable, high-quality
-              outcomes for referred cases.
+              Dr. Taruna Pratap Singh combines postgraduate training in
+              Orthodontics & Dentofacial Orthopaedics with hands-on general
+              dental practice — comprehensive oral examinations, diagnosis,
+              and evidence-based treatment planning for patients of all ages.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-3 mt-8">
@@ -80,7 +77,7 @@ export default function Expertise() {
               href="#referral"
               className="inline-flex items-center gap-2 mt-10 bg-teal-700 hover:bg-teal-800 text-white px-7 py-3.5 rounded-xl font-semibold transition-all shadow-md text-sm"
             >
-              Refer a Complex Case
+              Book a Consultation
             </a>
           </div>
         </div>

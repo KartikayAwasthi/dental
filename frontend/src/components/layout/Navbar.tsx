@@ -48,7 +48,7 @@ export default function Navbar() {
               Dr. Taruna Pratap Singh
             </span>
             <span className="text-[10px] font-medium text-teal-600 uppercase tracking-[0.15em] mt-0.5">
-              Consultant Orthodontist
+              MDS Orthodontics & Dentofacial Orthopaedics
             </span>
           </Link>
 
@@ -73,7 +73,7 @@ export default function Navbar() {
 
             <a href="#referral"
               className="hidden md:flex items-center gap-1.5 bg-teal-600 hover:bg-teal-700 text-white text-[13px] font-semibold px-4 py-2 rounded-lg transition-colors">
-              Send Referral
+              Book Appointment
               <ArrowRight size={13}/>
             </a>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
           ))}
           <a href="#referral" onClick={() => setOpen(false)}
             className="flex items-center justify-center gap-2 mt-4 w-full bg-teal-600 text-white py-3 rounded-lg font-semibold text-sm">
-            Send a Referral <ArrowRight size={14}/>
+            Book Appointment <ArrowRight size={14}/>
           </a>
         </div>
       )}

@@ -199,27 +199,31 @@ ${form.message}
           </option>
 
           <option>
-            Metal Bracket Orthodontics
+            Fixed Orthodontic Treatment (Metal & Ceramic Braces)
           </option>
 
           <option>
-            Ceramic Bracket Orthodontics
+            Clear Aligner Therapy
           </option>
 
           <option>
-            Self-Ligating Braces
+            Root Canal Treatment
           </option>
 
           <option>
-            Clear Aligners
+            Restorative Dentistry & Crown Preparation
           </option>
 
           <option>
-            Functional Jaw Correction
+            Scaling, Polishing & Preventive Care
           </option>
 
           <option>
-            Lingual Orthodontics
+            Extraction / Pediatric Dental Care
+          </option>
+
+          <option>
+            General Consultation
           </option>
         </select>
 

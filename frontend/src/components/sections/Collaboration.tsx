@@ -2,28 +2,28 @@ import { Users, Globe, GraduationCap, Building2 } from "lucide-react";
 
 const collaborations = [
   {
-    icon: GraduationCap,
-    title: "Academic Associations",
+    icon: Building2,
+    title: "Clinical Practice",
     description:
-      "Life member of the Indian Orthodontic Society and member of the World Federation of Orthodontists.",
+      "Practises at Saraswati Dental Care, Goverdhan, and Shree Siyaram Multispeciality Dental Care, Mathura, collaborating with senior consultants on patient care.",
   },
   {
     icon: Globe,
-    title: "International Conferences",
+    title: "National Conference Presentation",
     description:
-      "Regular participant and presenter at national and international orthodontic conferences.",
+      "Presented a scientific paper — \"Evaluation of Enamel Surface Roughness\" — at a national conference in Rajahmundry, Andhra Pradesh.",
   },
   {
-    icon: Building2,
-    title: "Institutional Collaboration",
+    icon: GraduationCap,
+    title: "Published Research",
     description:
-      "Research and educational collaboration with King George Medical University and AIIMS Delhi.",
+      "Original research article on evaluation of anterior alveolar dimension in the North Indian population, published in the Asian Journal of Dental Sciences.",
   },
   {
     icon: Users,
-    title: "Clinical Partnerships",
+    title: "Continuing Education",
     description:
-      "Active referral partnerships with dentists, oral surgeons, prosthodontists, and pediatricians.",
+      "Ongoing training including Mastering Clear Aligners (AIIMS Delhi), Clinical Application of Lasers in Dentistry, and Max Emergency Life Support.",
   },
 ];
 
@@ -39,8 +39,8 @@ export default function Collaboration() {
             Professional Collaboration
           </h2>
           <p className="mt-5 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">
-            Building stronger orthodontic outcomes through research, education,
-            and professional networks.
+            Clinical practice grounded in academic research and continuous
+            professional learning.
           </p>
         </div>
 

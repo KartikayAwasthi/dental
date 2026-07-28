@@ -26,8 +26,7 @@ export default function Gallery() {
             <p className="section-label">Clinical Outcomes</p>
             <h2 className="section-heading mt-4">Treatment Results</h2>
             <p className="mt-4 text-[15px] text-slate-500 dark:text-white/45 max-w-md leading-[1.7]">
-              A selection of orthodontic outcomes — for referring doctors to
-              assess case complexity and treatment quality.
+              A look at orthodontic treatment and smile transformations.
             </p>
           </div>
 

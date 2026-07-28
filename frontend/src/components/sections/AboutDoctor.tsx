@@ -3,15 +3,19 @@
 import Image from "next/image";
 import { m } from "@/lib/motion";
 import { ArrowRight } from "lucide-react";
+import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import { slideLeft, slideRight, fadeUp, stagger, viewportOpts } from "@/lib/animations";
 
+const aboutStats = [
+  { end: 3, suffix: "+", label: "Years in Practice" },
+  { end: 6, suffix: "+", label: "Core Treatment Skills" },
+];
+
 const credentials = [
-  { year: "2012", emoji: "🎓", degree: "MDS — Orthodontics & Dentofacial Orthopaedics", inst: "King George Medical University, Lucknow" },
-  { year: "2008", emoji: "🎓", degree: "BDS — Bachelor of Dental Surgery",              inst: "King George Medical University, Lucknow" },
-  { year: "2018", emoji: "🏥", degree: "Mastering Clear Aligners — Certified Course",   inst: "AIIMS Delhi" },
-  { year: "2018", emoji: "✅", degree: "Certified Invisalign Provider",                 inst: "Align Technology" },
-  { year: "2015", emoji: "🏅", degree: "Life Member",                                   inst: "Indian Orthodontic Society" },
-  { year: "2016", emoji: "🌍", degree: "Member",                                        inst: "World Federation of Orthodontists" },
+  { emoji: "🎓", degree: "MDS — Orthodontics & Dentofacial Orthopaedics", inst: "Atal Bihari Vajpayee Medical University, Lucknow" },
+  { emoji: "🎓", degree: "BDS — Bachelor of Dental Surgery",              inst: "KD Dental College, Mathura" },
+  { emoji: "🏥", degree: "Mastering Clear Aligners — Certified Course",   inst: "AIIMS Delhi" },
+  { emoji: "💡", degree: "Clinical Application of Lasers in Dentistry",   inst: "Certificate Course" },
 ];
 
 export default function AboutDoctor() {
@@ -37,15 +41,19 @@ export default function AboutDoctor() {
               />
             </div>
 
-            {/* Registration badge */}
+            {/* Circular seal badge */}
             <m.div
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.7 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={viewportOpts}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="absolute -bottom-5 right-6 bg-teal-600 text-white rounded-2xl px-5 py-4 shadow-xl shadow-teal-200/50 dark:shadow-none">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-teal-100">🏥 UP Dental Council</p>
-              <p className="text-xl font-black mt-0.5">Reg. A23844</p>
+              className="absolute -bottom-6 left-6 w-28 h-28 rounded-full
+                bg-teal-600 text-white shadow-xl shadow-teal-200/50 dark:shadow-none
+                ring-4 ring-white dark:ring-[#09090b]
+                flex flex-col items-center justify-center text-center px-2">
+              <span className="text-xl leading-none">🦷</span>
+              <p className="text-[10px] font-bold uppercase tracking-wide mt-1 leading-tight">Practising<br/>Since</p>
+              <p className="text-sm font-black leading-none mt-0.5">Nov 2022</p>
             </m.div>
           </m.div>
 
@@ -57,7 +65,7 @@ export default function AboutDoctor() {
             viewport={viewportOpts}
             className="pt-4">
 
-            <m.p variants={fadeUp} className="section-label">🩺 About the Consultant</m.p>
+            <m.p variants={fadeUp} className="section-label">🩺 About the Doctor</m.p>
 
             <m.h2 variants={fadeUp} className="section-heading mt-4">
               Dr. Taruna Pratap Singh
@@ -65,29 +73,38 @@ export default function AboutDoctor() {
 
             <m.p variants={fadeUp}
               className="mt-6 text-[16px] leading-[1.8] text-slate-500 dark:text-white/55">
-              Dr. Taruna is a specialist Consultant Orthodontist and Dentofacial Orthopaedist
-              with postgraduate training from King George Medical University, Lucknow. She
-              practises in Mathura and accepts orthodontic referrals from across Uttar Pradesh
-              and Delhi NCR.
+              Dr. Taruna is a motivated and dedicated dental professional holding an MDS in
+              Orthodontics and Dentofacial Orthopaedics from Atal Bihari Vajpayee Medical
+              University, Lucknow, and a BDS from KD Dental College, Mathura. She practises at
+              Saraswati Dental Care, Goverdhan, and Shree Siyaram Multispeciality Dental Care,
+              Mathura.
             </m.p>
             <m.p variants={fadeUp}
               className="mt-4 text-[16px] leading-[1.8] text-slate-500 dark:text-white/55">
-              Her referral practice focuses on complex and specialised cases — skeletal jaw
-              discrepancies, lingual orthodontics, clear aligner cases beyond routine
-              alignment, pre-surgical orthodontic planning, and early paediatric intervention.
-              A comprehensive written case report is returned to the referring doctor after
-              every consultation.
+              Her practice combines comprehensive general dentistry — examinations, diagnosis,
+              treatment planning, restorations, root canal treatment, extractions, and scaling —
+              with orthodontic treatment, working alongside senior consultants to provide
+              evidence-based, patient-centred care.
             </m.p>
+
+            {/* Stat counters */}
+            <m.div variants={fadeUp} className="mt-8 flex gap-10">
+              {aboutStats.map(({ end, suffix, label }) => (
+                <div key={label}>
+                  <p className="text-4xl font-extrabold text-slate-900 dark:text-white tabular-nums">
+                    <AnimatedCounter end={end} suffix={suffix} />
+                  </p>
+                  <p className="text-[12px] text-slate-500 dark:text-white/40 mt-1 font-medium">{label}</p>
+                </div>
+              ))}
+            </m.div>
 
             {/* Credentials */}
             <m.div variants={stagger(0.08)} className="mt-10 space-y-4">
-              {credentials.map(({ year, emoji, degree, inst }) => (
+              {credentials.map(({ emoji, degree, inst }) => (
                 <m.div key={degree} variants={fadeUp} className="flex gap-4 items-start">
                   <div className="shrink-0 flex items-center gap-1.5 mt-0.5">
                     <span className="text-sm">{emoji}</span>
-                    <span className="text-[11px] font-bold text-teal-600 bg-teal-50 dark:bg-teal-500/10 dark:text-teal-400 px-2 py-0.5 rounded-md">
-                      {year}
-                    </span>
                   </div>
                   <div>
                     <p className="text-[14px] font-semibold text-slate-900 dark:text-white leading-snug">{degree}</p>
@@ -104,7 +121,7 @@ export default function AboutDoctor() {
                   text-white dark:text-slate-900
                   hover:bg-teal-600 dark:hover:bg-teal-400
                   font-semibold text-sm px-6 py-3.5 rounded-xl transition-colors duration-200">
-                📋 Send a Referral
+                📅 Book an Appointment
                 <ArrowRight size={14} />
               </a>
             </m.div>

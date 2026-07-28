@@ -6,15 +6,14 @@ import { X, Send, RotateCcw, Stethoscope, ArrowRight } from "lucide-react";
 type Msg = { from: "bot" | "user"; text: string };
 
 const FAQS = [
-  { q: "What cases can I refer?",        a: "Crowding, spacing, skeletal jaw discrepancies, lingual orthodontics, complex aligners, surgical planning, and early paediatric cases." },
-  { q: "How do I submit a referral?",    a: "Use the referral form on this page — under 3 minutes. Or call/WhatsApp +91 82184 66101 for urgent cases." },
-  { q: "Will I receive a case report?",  a: "Yes — written diagnosis, treatment plan, and timeline shared with you after every consultation." },
-  { q: "How fast is the response?",      a: "All referrals are responded to within 24 hours. Patient appointments within 3–7 working days." },
-  { q: "Do you accept surgical cases?",  a: "Yes. Pre- and post-surgical orthodontic planning for orthognathic surgery is accepted." },
-  { q: "Which cities are covered?",      a: "Mathura, Agra, Noida, Delhi, Gurgaon, and Etawah." },
+  { q: "What treatments do you offer?",   a: "Fixed braces (metal & ceramic), clear aligner therapy, root canal treatment, restorative dentistry & crowns, scaling & preventive care, and extractions including pediatric procedures." },
+  { q: "How do I book an appointment?",   a: "Use the appointment form on this page, or call/WhatsApp +91 82184 66101." },
+  { q: "Do you treat children?",          a: "Yes — general dental care and pediatric dental procedures are offered alongside orthodontic treatment." },
+  { q: "Where are the clinics located?",  a: "Saraswati Dental Care, Goverdhan, and Shree Siyaram Multispeciality Dental Care, Mathura." },
+  { q: "Do you offer clear aligners?",    a: "Yes, in addition to traditional metal and ceramic braces." },
 ];
 
-const INIT: Msg = { from: "bot", text: "Hello Doctor. How can I help with a referral today?" };
+const INIT: Msg = { from: "bot", text: "Hello! How can I help you today?" };
 
 export default function ChatBot() {
   const [open, setOpen]   = useState(false);
@@ -33,7 +32,7 @@ export default function ChatBot() {
   return (
     <>
       {/* Trigger */}
-      <button onClick={() => setOpen(!open)} aria-label="Open referral assistant"
+      <button onClick={() => setOpen(!open)} aria-label="Open chat assistant"
         className="fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-teal-600 hover:bg-teal-500 text-white shadow-xl flex items-center justify-center transition-colors">
         {open ? <X size={20} /> : <Stethoscope size={20} />}
       </button>
@@ -50,7 +49,7 @@ export default function ChatBot() {
               </div>
               <div>
                 <p className="text-[13px] font-bold text-slate-900 dark:text-white">Dr. Taruna's Assistant</p>
-                <p className="text-[11px] text-slate-400 dark:text-white/35">Referral enquiries</p>
+                <p className="text-[11px] text-slate-400 dark:text-white/35">Patient enquiries</p>
               </div>
             </div>
             <button onClick={reset} aria-label="Reset" className="text-slate-300 dark:text-white/20 hover:text-teal-500 transition-colors">
