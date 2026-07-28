@@ -231,6 +231,10 @@ ${form.message}
           <option>
             General Consultation
           </option>
+
+          <option>
+            Other
+          </option>
         </select>
 
         {/* Date */}

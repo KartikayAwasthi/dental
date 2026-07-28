@@ -8,9 +8,9 @@ import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import { fadeUp, stagger, viewportOpts } from "@/lib/animations";
 
 const stats = [
-  { end: 3, suffix: "+", label: "Years in Practice",     icon: "🏅" },
+  { end: 4, suffix: "+", label: "Years in Practice",     icon: "🏅" },
   { end: 2, suffix: "",  label: "Practice Locations",     icon: "🏥" },
-  { end: 6, suffix: "+", label: "Core Treatment Skills",  icon: "🦷" },
+  { end: 10, suffix: "+", label: "Core Treatment Skills",  icon: "🦷" },
   { end: 1, suffix: "",  label: "Published Research",     icon: "🔬" },
 ];
 
@@ -73,9 +73,13 @@ export default function Hero() {
 
             <m.p variants={fadeUp}
               className="mt-6 text-[17px] leading-[1.8] text-slate-600 dark:text-white/55 max-w-lg">
-              Dr. Taruna Pratap Singh <span className="font-semibold text-slate-800 dark:text-white/80">(MDS Orthodontics & Dentofacial Orthopaedics)</span> provides
-              comprehensive dental and orthodontic care at Saraswati Dental Care, Goverdhan, and
-              Shree Siyaram Multispeciality Dental Care, Mathura.
+              Dr. Taruna Pratap Singh provides comprehensive dental and orthodontic care at
+              Saraswati Dental Care, Goverdhan, and Shree Siyaram Multispeciality Dental Care,
+              Mathura. Dedicated to delivering personalized, evidence-based treatment, she offers
+              a full range of preventive, corrective, and advanced orthodontic solutions for
+              children, adolescents, and adults. With a patient-first approach, Dr. Singh is
+              committed to creating healthy, confident smiles through compassionate care, modern
+              technology, and customized treatment plans.
             </m.p>
 
             {/* CTAs */}

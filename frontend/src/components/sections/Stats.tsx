@@ -1,9 +1,9 @@
 import AnimatedCounter from "../ui/AnimatedCounter";
 
 const stats = [
-  { end: 3, suffix: "+", label: "Years in Practice", sub: "Since November 2022" },
+  { end: 4, suffix: "+", label: "Years in Practice", sub: "Since November 2022" },
   { end: 2, suffix: "", label: "Clinics", sub: "Goverdhan & Mathura" },
-  { end: 6, suffix: "+", label: "Core Treatment Skills", sub: "Orthodontic & general dentistry" },
+  { end: 10, suffix: "+", label: "Core Treatment Skills", sub: "Orthodontic & general dentistry" },
   { end: 1, suffix: "", label: "Published Research Article", sub: "Asian Journal of Dental Sciences" },
 ];
 

@@ -7,8 +7,8 @@ import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import { slideLeft, slideRight, fadeUp, stagger, viewportOpts } from "@/lib/animations";
 
 const aboutStats = [
-  { end: 3, suffix: "+", label: "Years in Practice" },
-  { end: 6, suffix: "+", label: "Core Treatment Skills" },
+  { end: 4, suffix: "+", label: "Years in Practice" },
+  { end: 10, suffix: "+", label: "Core Treatment Skills" },
 ];
 
 const credentials = [

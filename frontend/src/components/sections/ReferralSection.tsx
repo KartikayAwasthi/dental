@@ -38,8 +38,7 @@ export default function ReferralSection() {
 
             <m.p variants={fadeUp}
               className="mt-5 text-white/45 text-[15px] leading-[1.75] max-w-sm">
-              Fill in the form to request an appointment at Saraswati Dental Care, Goverdhan,
-              or Shree Siyaram Multispeciality Dental Care, Mathura.
+              Fill in the form to request an appointment from doctor.
             </m.p>
 
             <m.ul variants={stagger(0.08)} className="mt-8 space-y-3">
