@@ -68,7 +68,7 @@ export default function Hero() {
               <br />
               <span className="teal-text">Dental & Orthodontic</span>
               <br />
-              Care in Mathura
+              Care
             </m.h1>
 
             <m.p variants={fadeUp}
